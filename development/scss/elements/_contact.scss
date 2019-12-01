@@ -111,7 +111,7 @@ input[type="checkbox"]::after {
 
 input[type="checkbox"]:checked::after {
   content: "";
-  background: #FFFFFF url("../../../images/Checkmark.svg") no-repeat center;
+  background: #FFFFFF url("../../images/Checkmark.svg") no-repeat center;
   width: 1.5rem;
   height: 1.5rem;
 }

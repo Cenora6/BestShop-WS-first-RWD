@@ -73,7 +73,7 @@
   border-radius: 6px;
   outline: none;
   background-position-x: revert;
-  background: #FFF url("../images/Arrow Down.svg") no-repeat 98% center;
+  background: #FFF url("../../images/Arrow Down.svg") no-repeat 98% center;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -82,7 +82,7 @@
 
 .package-choosing:active {
   background-position-x: revert;
-  background: url("../images/Arrow Up.svg") no-repeat 98% center;
+  background: url("../../images/Arrow Up.svg") no-repeat 98% center;
   -webkit-appearance: none;
 }
 
