@@ -28,8 +28,15 @@
     display: flex;
     flex-direction: column;
 
-    input[type="number"] {
+    input[type="=number"] {
       outline: none;
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
     }
 
     input::placeholder,
@@ -93,6 +100,11 @@
       padding: 0.1875rem;
       cursor: pointer;
     }
+
+    .chosen {
+      color: #000;
+      font-weight: 400;
+    }
   }
 
   .product-quantity,
@@ -127,6 +139,7 @@
   }
 
   .right-side-calculator {
+    font-family: $main-font;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -142,6 +155,10 @@
       background: #55DFB4;
       box-shadow: 0 3px 6px #00000029;
       border-radius: 6px;
+
+      [placeholder] {
+        font-family: $main-font;
+      }
     }
 
     .product-text,
@@ -159,7 +176,7 @@
     .orders-values,
     .package-values {
       text-align: center;
-      font-family: $secondary-font;
+      font-family: $main-font;
       font-size: 0.875rem;
       color: #FFFFFF;
     }
