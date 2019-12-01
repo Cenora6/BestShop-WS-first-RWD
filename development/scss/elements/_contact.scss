@@ -111,15 +111,12 @@ input[type="checkbox"] {
   }
 }
 
-.checkbox {
-  .checkbox-text {
-    font-size: 0.75rem;
-    width: 90%;
-    text-align: left;
-    font-family: $secondary-font;
-    color: #707070;
-    padding-left: 1.25rem;
-    line-height: 1.0625rem;
-  }
+.checkbox-text {
+  font-size: 0.75rem;
+  width: 90%;
+  text-align: left;
+  font-family: $secondary-font;
+  color: #707070;
+  padding-left: 1.25rem;
+  line-height: 1.0625rem;
 }
-

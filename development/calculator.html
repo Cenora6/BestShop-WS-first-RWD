@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="calculator-box">
 
     <section class="container">
         <div class="calculator-title">
@@ -19,12 +19,14 @@
 
                 <input type="number" class="product-quantity" placeholder="Product quantity"/>
                 <input type="number" class="orders" placeholder="Estimated orders in month" />
-                <select class="package-choosing">
-                    <option disabled selected value>Choose package</option>
-                    <option class="styled" value="basic">Basic</option>
-                    <option class="styled" value="professional">Professional</option>
-                    <option class="styled" value="premium">Premium</option>
-                </select>
+
+                <button class="package-choosing package-arrow-down package-arrow-up">Choose package</button>
+                <div class="dropdown-visible dropdown-hidden">
+                    <div class="option basic">Basic</div>
+                    <div class="option professional">Professional</div>
+                    <div class="option premium">Premium</div>
+                </div>
+
                 <div class="accounting-checkbox">
                     <input type="checkbox" class="accounting"/>
                     <span class="accounting-text-span">Accounting</span>
@@ -71,7 +73,6 @@
 
         </div>
     </section>
-
 
 </body>
 <script src="js/calculator.js"></script>
