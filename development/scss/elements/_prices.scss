@@ -1,0 +1,132 @@
+.price {
+  margin: 5rem 0;
+}
+
+.price .container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.price h2 {
+  justify-content: center;
+  align-items: center;
+  padding: 3.125rem 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+
+
+.price h3 {
+  font-size: 2.875rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.price div:first-of-type h3 {
+  color: #FB3B64;
+  padding-bottom: 3.75rem;
+}
+
+.price div:nth-of-type(2) h3 {
+  color: #07ACE6;
+}
+
+.price div:nth-of-type(3) h3 {
+  color: #55DFB4;
+}
+
+.price h4 {
+  font-size: 1.3125rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding-bottom: 2.5rem;
+}
+
+.price h5 {
+  padding: 1.25rem 0 3.125rem 0;
+  font-size: 0.75rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.price div {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2.5rem;
+}
+
+.price div.small {
+  width: 23.25rem;
+  height: 28.81rem;
+  border-radius: 18px;
+}
+
+.price div:first-of-type {
+  border: 1px solid #FB3B64;
+}
+
+.price div:last-of-type {
+  padding-top: 0.625rem;
+  border: 1px solid #55DFB4;
+}
+
+.price div.large {
+  width: 25.31rem;
+  height: 31.25rem;
+  box-shadow: 5px 10px 27px #07ACE629;
+  border: 1px solid #07ACE6;
+  border-radius: 18px;
+}
+
+.price ul {
+  list-style-type: none;
+}
+
+.price li {
+  padding-bottom: 1.25rem;
+  font-size: 	0.875rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.checkmark, .cross {
+  width: 0.6875rem;
+  height: 0.6875rem;
+  margin-right: 0.625rem;
+}
+
+.begin {
+  width: 10rem;
+  height: 3.125rem;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 23px;
+  align-self: center;
+  position: absolute;
+  margin-left: -4.8rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.button_basic {
+  margin-top: 2rem;
+  background: #FB3B64;
+  cursor: pointer;
+}
+
+.button_professional {
+  margin-top: 2.5rem;
+  background-color: #07ACE6;
+  cursor: pointer;
+}
+
+.button_premium {
+  margin-top: 1rem;
+  background: #55DFB4;
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+nav {
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  box-shadow: 0 3px 6px #00000029;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  height: 4.375rem;
+  padding-top: 0.9375rem;
+}
+
+nav div.container {
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav .container h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #08A6E4;
+}
+
+.links ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 	0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 5rem;
+  list-style-type: none;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #A5A5A5;
+  letter-spacing: 0.1875rem;
+}
+
+.links ul li a:hover {
+  color: #000000;
+  border-bottom: 4px solid #08A6E4;
+  padding: 1.688rem 0;
+}

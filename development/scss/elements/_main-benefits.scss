@@ -1,0 +1,167 @@
+main {
+  background-color: #F7F7F7;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 87.1875rem;
+  padding: 6.563rem 0;
+}
+
+main .container article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70.25rem;
+  height: 23.125rem;
+  border-radius: 5px;
+  margin: 0 auto 2.313rem;
+}
+
+main .container .line1,
+main .container .line2 {
+  border: 1px solid #E8E9ED;
+  background-color: #fff;
+}
+
+main article .benefits-description {
+  width: 26rem;
+}
+
+main article h2 {
+  font-size: 2.25rem;
+  padding-bottom: 1.875rem;
+  font-family: Raleway, sans-serif;
+  width: 16.875rem;
+  font-weight: 400;
+}
+
+main article p {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+/* FIRST BOX ARTICLE */
+
+main .line1 p:after {
+  content: "";
+  width: 20.4375rem;
+  bottom: -3.125rem;
+  left: 0;
+  position: absolute;
+  border-bottom: 4px solid #FB3B64;
+}
+
+main .line1 img {
+  height: 13.375rem;
+  width: 24.125rem;
+  position: relative;
+  z-index: 2;
+}
+
+main .line1 {
+  display: flex;
+  position: relative;
+  z-index: 5;
+}
+
+main .line1::after {
+  content: "";
+  position: absolute;
+  right: 4.4375rem;
+  top: 2.5rem;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  border-radius: 41px;
+  background: #FB3B64;
+  width: 11.25rem;
+  height: 11.25rem;
+}
+
+/* SECOND BOX ARTICLE */
+
+main .line2 p:after {
+  content: "";
+  width: 20.4375rem;
+  bottom: -3.125rem;
+  left: 0;
+  position: absolute;
+  border-bottom: 4px solid #08A6E4;
+}
+
+main .line2 img { /* image in 2nd box */
+  height: 20.5rem;
+  width: 26.625rem;
+  position: relative;
+  z-index: 2;
+}
+
+main .line2 {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  z-index: 5;
+}
+
+main .line2::after {
+  content: "";
+  position: absolute;
+  left: 4.375rem;
+  bottom: 2.375rem;
+  border-radius: 50%;
+  background: #07ace6;
+  width: 20rem;
+  height: 20rem;
+}
+
+/* THIRD BOX ARTICLE */
+
+main .line3 {
+  display: flex;
+  width: 70.30rem;
+}
+
+main .line3 p:after {
+  content: "";
+  width: 20.4375rem;
+  bottom: -3.125rem;
+  left: 0;
+  position: absolute;
+  border-bottom: 4px solid #55DFB4;
+}
+
+main .line3 .benefits {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #E8E9ED;
+  padding: 0 3.125rem;
+  border-radius: 5px;
+  width: 38.94rem;
+  height: 23.13rem;
+  margin-right: 3.125rem;
+}
+
+.divided .benefits h2 {
+  width: 25rem;
+}
+
+.divided .benefits p {
+  position: relative;
+}
+
+main .line3 img {
+  height: 12.94rem;
+  width: 18.44rem;
+}
+
+main .divided .benefits-image {
+  width: 27.5rem;
+  height: 23.13rem;
+  background: #55DFB4;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

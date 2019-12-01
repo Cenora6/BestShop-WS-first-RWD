@@ -1,0 +1,139 @@
+.contact .container {
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.125rem;
+}
+
+.space {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  flex-direction: column;
+  width: 40%;
+  padding-right: 4.375rem;
+  padding-bottom: 6.25rem;
+}
+
+.contact h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+
+}
+
+.contact .text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+}
+
+.right {
+  width: 40%;
+  padding-left: 4.375rem;
+  padding-top: 3.125rem;
+  padding-bottom: 12.5rem;
+}
+
+
+.photo-icons {
+  font-family: "Open Sans", sans-serif;
+  color: #A5A5A5;
+  padding-bottom: 21.88rem;
+}
+
+.mail-image {
+  padding-right: 1.25rem;
+}
+
+.mail-image img {
+  margin-right: 1.25rem;
+  vertical-align: middle;
+}
+
+.phone-image {
+  padding-left: 1.25rem;
+}
+
+.photo-icons img {
+  margin-right: 1.25rem;
+  vertical-align: middle;
+}
+
+.contact-form {
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.25rem;
+  color: #08A6E4;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 1.25rem;
+}
+
+.contact-form label {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 1.875rem;
+}
+
+.contact-form input {
+  margin-top: 2.5rem;
+}
+
+.checkbox-text {
+  font-size: 0.75rem;
+  width: 90%;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  color: #707070;
+  padding-left: 1.25rem;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #FFFFFF;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  background: #FFFFFF url("../../../images/Checkmark.svg") no-repeat center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contact button {
+  width: 14.13rem;
+  height: 3.563rem;
+  background-color: #08A6E4;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 35px;
+  font-size: 0.8125rem;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-left: 14.38rem;
+}
+
+input[type="text"] {
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-color: #707070;
+  border-bottom-width: 1px;
+}

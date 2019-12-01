@@ -1,0 +1,47 @@
+header {
+  flex-direction: column;
+  align-items: center;
+  height: 56.25rem;
+  background: url("../../../images/Background.png") no-repeat bottom/contain;
+  padding-top: 9.375rem;
+}
+
+header .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3.0625rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  padding-top: 0.625rem;
+  padding-bottom: 1.25rem;
+}
+
+header p {
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  padding-bottom: 1.875rem;
+}
+
+header button {
+  margin: 1.25rem;
+  background: #08A6E4;
+  box-shadow: 5px 10px 14px #07ACE629;
+  width: 27.5rem;
+  height: 4.188rem;
+  border-radius: 2.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+header button a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
