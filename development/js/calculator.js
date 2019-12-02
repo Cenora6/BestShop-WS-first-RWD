@@ -19,12 +19,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
     const productValue = document.querySelector('.product-values');
     const productTotal = document.querySelector('.product-total');
+    const productBar = document.querySelector('.product-bar');
 
     const ordersValue = document.querySelector('.orders-values');
     const ordersTotal = document.querySelector('.orders-total');
+    const ordersBar = document.querySelector('.orders-bar');
 
     const packageValue = document.querySelector('.package-values');
     const packageTotal = document.querySelector('.package-total');
+    const packageBar = document.querySelector('.package-bar');
 
     const resultTotal = document.querySelector('.result-total');
 
@@ -42,12 +45,14 @@ document.addEventListener('DOMContentLoaded', function (e) {
             productValue.innerText = 'error';
             sum1 = 0 * 0.5;
             productTotal.innerText = 'error';
+            productBar.style.visibility = 'visible';
             resultTotal.innerText = '$' + (sum1 + sum2 + sum3 + sum4 + sum5);
         } else {
             productQuantity.innerText = this.value + ' * $0.5';
             productValue.innerText = this.value + " * $0.5";
             sum1 = this.value * 0.5;
             productTotal.innerText = "$" + sum1;
+            productBar.style.visibility = 'visible';
             resultTotal.innerText = '$' + (sum1 + sum2 + sum3 + sum4 + sum5);
         }
 
@@ -61,11 +66,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
             ordersValue.innerText = 'error';
             sum2 = 0 * 0.25;
             ordersTotal.innerText = 'error';
+            ordersBar.style.visibility = 'visible';
             resultTotal.innerText = '$' + (sum1 + sum2 + sum3 + sum4 + sum5);
         } else {
             estimatedOrders.innerText = this.value + ' * $0.25';
             ordersValue.innerText = this.value + " * $0.25";
             sum2 = this.value * 0.25;
+            ordersBar.style.visibility = 'visible';
             ordersTotal.innerText = "$" + sum2;
             resultTotal.innerText = '$' + (sum1 + sum2 + sum3 + sum4 + sum5);
         }
@@ -84,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
         dropdown.classList.toggle('dropdown-hidden');
         packageValue.innerText = 'Basic';
         packageTotal.innerText = '$' + 0;
+        packageBar.style.visibility = "visible";
         dropdownButton.classList.toggle('package-arrow-up');
         sum3 = 0;
         resultTotal.innerText = '$' + (sum1 + sum2 + sum3 + sum4 + sum5);
@@ -95,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
         dropdown.classList.toggle('dropdown-hidden');
         packageValue.innerText = 'Professional';
         packageTotal.innerText = '$' + 25;
+        packageBar.style.visibility = "visible";
         dropdownButton.classList.toggle('package-arrow-up');
         sum3 = 25;
         resultTotal.innerText = '$' + (sum1 + sum2 + sum3 + sum4 + sum5);
@@ -107,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
         dropdown.classList.toggle('dropdown-hidden');
         packageValue.innerText = 'Premium';
         packageTotal.innerText = '$' + 60;
+        packageBar.style.visibility = "visible";
         dropdownButton.classList.toggle('package-arrow-up');
         sum3 = 60;
         resultTotal.innerText = '$' + (sum1 + sum2 + sum3 + sum4 + sum5);
@@ -117,15 +127,19 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
     const accountingTotal = document.querySelector('.accounting-total');
     const accountingCheckbox = document.querySelector('.accounting');
+    const accountingBar = document.querySelector('.accounting-bar');
 
     const terminalTotal = document.querySelector('.terminal-total');
     const terminalCheckbox = document.querySelector('.rental');
+    const terminalBar = document.querySelector('.terminal-bar');
 
     accountingCheckbox.addEventListener('change', function (e) {
         if (this.checked) {
+            accountingBar.style.visibility = "visible";
             accountingTotal.innerText = '$' + 35;
             sum4 = 35;
         } else {
+            accountingBar.style.visibility = "visible";
             accountingTotal.innerText = '$' + 0;
             sum4 = 0;
         }
@@ -136,9 +150,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
     terminalCheckbox.addEventListener('change', function (e) {
         if (this.checked) {
+            terminalBar.style.visibility = "visible";
             terminalTotal.innerText = '$' + 5;
             sum5 = 5;
         } else {
+            terminalBar.style.visibility = "visible";
             terminalTotal.innerText = '$' + 0;
             sum5 = 0;
         }
