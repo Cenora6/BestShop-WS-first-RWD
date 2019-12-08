@@ -3,15 +3,27 @@
   align-items: center;
   justify-content: center;
   font-family: $secondary-font;
-  height: 31.25rem;
-  width: 100vh;
+  height: 50rem;
   border-bottom: 1px solid #E8E9ED;
+
+  @media (min-width: 1353px) {
+    height: 31.25rem;
+    margin-top: 3rem;
+  }
 
   h2 {
     color: black;
-    font-size: 2.25rem;
-    padding-bottom: 1.25rem;
+    font-size: 1.875rem;
+    margin-top: 3rem;
     font-weight: 400;
+    width: 18.9375rem;
+    text-align: center;
+
+    @media (min-width: 1353px) {
+      padding-bottom: 1.25rem;
+      width: 100%;
+      font-size: 2.25rem;
+    }
   }
 
   .icons {
@@ -19,6 +31,11 @@
     justify-content: space-between;
     position: relative;
     padding: 3.125rem;
+    flex-direction: column;
+
+    @media (min-width: 1353px) {
+      flex-direction: row;
+    }
 
     .why-us-icon {
       display: flex;
@@ -27,6 +44,11 @@
       padding: 0 6.25rem;
       width: 20.63rem;
       position: relative;
+      margin-top: 2rem;
+
+      @media (min-width: 1353px) {
+        margin-top: 0;
+      }
 
       &::before {
         content: "";
@@ -35,7 +57,7 @@
         position: absolute;
         background: #FB3B64;
         border-radius: 50%;
-        z-index: 0;
+        z-index: -10;
         left: 33%;
       }
 
@@ -56,7 +78,7 @@
 
       img {
         padding: 0.3125rem 0;
-        z-index: 2;
+        z-index: -2;
       }
 
       h3 {
