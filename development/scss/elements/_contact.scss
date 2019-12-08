@@ -1,27 +1,53 @@
-.contact div {
-  margin-top: 2rem;
+.contact > div {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+
+  @media (min-width: 1353px) {
+    flex-direction: row;
+    margin-top: 7rem;
+
+    align-items: center;
+  }
 }
 
 .left {
   flex-direction: column;
-  padding-right: 4.375rem;
+
+  @media (min-width: 1353px) {
+    flex-direction: row;
+    padding-right: 4.375rem;
+  }
 
   h2 {
     font-family: $secondary-font;
     font-size: 3rem;
     font-weight: 400;
+
+    @media (min-width: 1353px) {
+      font-size: 2.5rem;
+    }
   }
 
   .text {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
+    padding-top: 2rem;
   }
 
   .photo-icons {
     font-family: "Open Sans", sans-serif;
     color: #A5A5A5;
-    padding-bottom: 21.88rem;
+    padding: 3rem 0;
+    flex-direction: column;
+
+    @media (min-width: 1353px) {
+      flex-direction: row;
+      padding-bottom: 17em;
+    }
 
     .mail-image {
       padding-right: 1.25rem;
@@ -33,7 +59,11 @@
     }
 
     .phone-image {
-      padding-left: 1.25rem;
+      padding-top: 1rem;
+      @media (min-width: 1353px) {
+        padding-top: 0;
+        padding-left: 1.25rem;
+      }
 
       img {
         margin-right: 1.25rem;
@@ -45,7 +75,10 @@
 
 .right {
   width: 40%;
-  padding-left: 4.375rem;
+
+  @media (min-width: 1353px) {
+    padding-left: 4.375rem;
+  }
 
   .contact-form {
     flex-direction: column;
@@ -66,10 +99,14 @@
 
     input {
       height: 3.125rem;
-      padding: 0 1rem;
+      padding: 0 10rem;
       margin-top: 0.5rem;
       border-bottom: 2px #707070 solid;
       opacity: 0.5;
+
+      @media (min-width: 1353px) {
+        padding: 0 1rem;
+      }
     }
   }
 
@@ -84,7 +121,19 @@
     font-family: $main-font;
     font-weight: 700;
     margin-top: 2.5rem;
-    margin-left: 14.38rem;
+    margin-left: 7rem;
+
+    @media (min-width: 1353px) {
+      margin-top: 2.5rem;
+      margin-left: 14.38rem;
+    }
+  }
+}
+
+.checkbox {
+  width: 20rem;
+  @media (min-width: 1353px) {
+    width: 25.3125rem;
   }
 }
 
@@ -113,10 +162,13 @@ input[type="checkbox"] {
 
 .checkbox-text {
   font-size: 0.75rem;
-  width: 90%;
   text-align: left;
   font-family: $secondary-font;
   color: #707070;
-  padding-left: 1.25rem;
+  padding-left: 3rem;
   line-height: 1.0625rem;
+
+  @media (min-width: 1353px) {
+    padding-left: 2rem;
+  }
 }
