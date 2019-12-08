@@ -2,18 +2,22 @@
 justify-content: center;
 
   .calculator-button {
-    width: 20rem;
+    width: 15rem;
     height: 3.125rem;
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 23px;
     align-self: center;
     text-decoration: none;
     font-family: $main-font;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 700;
     color: #FFFFFF;
     background-image: linear-gradient(to right, #FB3B64, #07ACE6, #55DFB4);
     cursor: pointer;
+
+    @media (min-width: 1353px) {
+      width: 20rem;
+    }
   }
 }
 
