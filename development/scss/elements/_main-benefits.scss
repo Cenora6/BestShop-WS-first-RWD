@@ -3,35 +3,61 @@ main {
   justify-content: center;
   width: 100%;
   height: 87.1875rem;
-  padding: 6.563rem 0;
+  padding: 1rem;
   background: #F7F7F7;
+
+  @media (min-width: 1353px) {
+    padding: 6.563rem 0;
+  }
 
   article {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 70.25rem;
+    width: 19.625rem;
     height: 23.125rem;
     border-radius: 5px;
-    margin: 0 auto 2.313rem;
+    margin: 2.313rem auto;
+
+    @media (min-width: 1353px) {
+      justify-content: space-around;
+      width: 70.25rem;
+      margin: 0 auto 2.313rem;
+    }
 
     .benefits-description {
-      width: 26rem;
+      width: 16.875rem;
+      padding-top: 1rem;
+
+      @media (min-width: 1353px) {
+        padding-top: 0;
+        width: 26rem;
+      }
     }
 
     h2 {
-      font-size: 2.25rem;
-      padding-bottom: 1.875rem;
+      font-size: 1.875rem;
+      padding-bottom: 2rem;
       font-family: $secondary-font;
-      width: 16.875rem;
+      width: 13rem;
       font-weight: 400;
+
+      @media (min-width: 1353px) {
+        font-size: 2.25rem;
+        width: 16.875rem;
+      }
     }
 
     p {
-      line-height: 1.375rem;
-      font-size: 1rem;
+      line-height: 1.1875rem;
+      font-size: 0.875rem;
       font-family: "Open Sans", sans-serif;
       position: relative;
+
+      @media (min-width: 1353px) {
+        font-size: 1rem;
+        line-height: 1.375rem;
+      }
     }
   }
 
@@ -46,34 +72,51 @@ main {
   .line1 {
     display: flex;
     position: relative;
-    z-index: 5;
+    flex-direction: column-reverse;
+
+    @media (min-width: 1353px) {
+      flex-direction: row;
+    }
 
     &::after {
       content: "";
       position: absolute;
-      right: 4.4375rem;
-      top: 2.5rem;
+      right: 4rem;
+      top: 1rem;
       transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
       border-radius: 41px;
       background: #FB3B64;
-      width: 11.25rem;
-      height: 11.25rem;
+      width: 5.625rem;
+      height: 5.625rem;
+
+      @media (min-width: 1353px) {
+        top: 2.5rem;
+        width: 11.25rem;
+        height: 11.25rem;
+      }
     }
 
-    p:after {
-      content: "";
-      width: 20.4375rem;
-      bottom: -3.125rem;
-      left: 0;
-      position: absolute;
-      border-bottom: 4px solid #FB3B64;
+    @media (min-width: 1353px) {
+      p:after {
+        content: "";
+        width: 20.4375rem;
+        bottom: -3.125rem;
+        left: 0;
+        position: absolute;
+        border-bottom: 4px solid #FB3B64;
+      }
     }
 
     img {
-      height: 13.375rem;
-      width: 24.125rem;
+      height: 6.875rem;
+      width: 12.0625rem;
       position: relative;
       z-index: 2;
+
+      @media (min-width: 1353px) {
+        height: 13.375rem;
+        width: 24.125rem;
+      }
     }
   }
 
@@ -81,35 +124,54 @@ main {
 
   .line2 {
     display: flex;
-    flex-direction: row-reverse;
     position: relative;
     z-index: 5;
+    flex-direction: column-reverse;
+
+    @media (min-width: 1353px) {
+      flex-direction: row-reverse;
+    }
 
     &::after {
       content: "";
       position: absolute;
       left: 4.375rem;
-      bottom: 2.375rem;
+      top: 0.5rem;
       border-radius: 50%;
       background: #07ace6;
-      width: 20rem;
-      height: 20rem;
+      width: 8.25rem;
+      height: 8.25rem;
+
+      @media (min-width: 1353px) {
+        left: 4.375rem;
+        top: 0.5rem;
+        width: 20rem;
+        height: 20rem;
+      }
     }
 
-    p:after {
-      content: "";
-      width: 20.4375rem;
-      bottom: -3.125rem;
-      left: 0;
-      position: absolute;
-      border-bottom: 4px solid #08A6E4;
+
+    @media (min-width: 1353px) {
+      p:after {
+        content: "";
+        width: 20.4375rem;
+        bottom: -3.125rem;
+        left: 0;
+        position: absolute;
+        border-bottom: 4px solid #08A6E4;
+      }
     }
 
     img {
-      height: 20.5rem;
-      width: 26.625rem;
+      height: 8.4375rem;
+      width: 10.9375rem;
       position: relative;
       z-index: 2;
+
+      @media (min-width: 1353px) {
+        height: 20.5rem;
+        width: 26.625rem;
+      }
     }
   }
 
@@ -117,15 +179,23 @@ main {
 
   .line3 {
     display: flex;
-    width: 70.30rem;
+    flex-direction: column;
+    height: 23.125rem;
 
-    p:after {
-      content: "";
-      width: 20.4375rem;
-      bottom: -3.125rem;
-      left: 0;
-      position: absolute;
-      border-bottom: 4px solid #55DFB4;
+    @media (min-width: 1353px) {
+      flex-direction: row;
+      width: 70.30rem;
+    }
+
+    @media (min-width: 1353px) {
+      p:after {
+        content: "";
+        width: 20.4375rem;
+        bottom: -3.125rem;
+        left: 0;
+        position: absolute;
+        border-bottom: 4px solid #55DFB4;
+      }
     }
 
     .benefits {
@@ -134,19 +204,24 @@ main {
       flex-direction: column;
       background-color: #fff;
       border: 1px solid #E8E9ED;
-      padding: 0 3.125rem;
+      padding: 1rem;
       border-radius: 5px;
-      width: 38.94rem;
-      height: 23.13rem;
-      margin-right: 3.125rem;
-    }
+      width: 19.625rem;
+      margin-top: 4rem;
 
+      @media (min-width: 1353px) {
+        width: 38.94rem;
+        height: 23.13rem;
+        padding: 0 3.125rem;
+        margin-top: 0;
+      }
+    }
   }
 
   .divided {
     .benefits {
       h2 {
-        width: 25rem;
+        width: 100%;
       }
       p {
         position: relative;
@@ -155,18 +230,27 @@ main {
 
     .line3 {
       img {
-        height: 12.94rem;
-        width: 18.44rem;
+        height: 13rem;
+        width: 18.5rem;
+
+        @media (min-width: 1353px) {
+          height: 12.94rem;
+          width: 18.44rem;
+        }
       }
       .benefits-image {
-        width: 27.5rem;
-        height: 23.13rem;
+        width: 19.625rem;
         background: #55DFB4;
         border: 1px solid #E8E9ED;
         border-radius: 5px;
-        display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+
+        @media (min-width: 1353px) {
+          position: relative;
+          width: 27.5rem;
+          height: 23.13rem;
+        }
       }
     }
   }

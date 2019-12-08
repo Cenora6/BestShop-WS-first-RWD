@@ -88,12 +88,14 @@
         font-weight: 800;
         letter-spacing: 0.375rem;
         color: #000000;
+        z-index: -2;
       }
 
       p {
         text-align: center;
         font-size: 1.0625rem;
         color: #A5A5A5;
+        z-index: -2;
       }
     }
   }
