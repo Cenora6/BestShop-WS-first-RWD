@@ -1,9 +1,15 @@
 header {
   flex-direction: column;
   align-items: center;
-  height: 56.25rem;
-  background: #FFF url("../../images/Background.png") no-repeat bottom/contain;
+  height: 40rem;
+  background: #FFF url("../../images/Background.png") no-repeat bottom;
+  background-size: 50rem;
   padding-top: 9.375rem;
+
+  @media (min-width: 1353px) {
+    height: 56.25rem;
+    background: #FFF url("../../images/Background.png") no-repeat bottom/contain;
+  }
 
   .header-box {
     flex-direction: column;
@@ -11,11 +17,15 @@ header {
     align-items: center;
 
     h1 {
-      font-size: 3.0625rem;
+      font-size: 2.1875rem;
       font-family: $secondary-font;
       font-weight: 400;
       padding-top: 0.625rem;
       padding-bottom: 1.25rem;
+
+      @media (min-width: 1353px) {
+        font-size: 3.0625rem;
+      }
     }
 
     p {
@@ -23,13 +33,19 @@ header {
       font-family: $secondary-font;
       font-weight: 400;
       padding-bottom: 1.875rem;
+      text-align: center;
+      width: 19.25rem;
+
+      @media (min-width: 1353px) {
+        width: 100%;
+      }
     }
 
     button {
       margin: 1.25rem;
       background: #08A6E4;
       box-shadow: 5px 10px 14px #07ACE629;
-      width: 27.5rem;
+      width: 19.375rem;
       height: 4.188rem;
       border-radius: 2.5rem;
       outline: none;
@@ -41,6 +57,10 @@ header {
         color: #fff;
         font-weight: 700;
         font-family: $main-font;
+      }
+
+      @media (min-width: 1353px) {
+        width: 27.5rem;
       }
     }
   }
