@@ -8,73 +8,74 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body class="calculator-box">
+    <section class="container">
+        <section class="">
+            <div class="back">
+                <a href='index.html'>
+                    <button class="previous-page-button">Wróć do strony głównej</button>
+                </a>
+            </div>
+            <div class="calculator-title">
+                <h3>Calculate how much you’ll pay</h3>
+            </div>
+            <div class="calculator">
+                <div class="left-side-calculator">
 
-    <section class="calculator-container container">
-        <div class="back">
-            <a href='index.html'>
-                <button class="previous-page-button">Wróć do strony głównej</button>
-            </a>
-        </div>
-        <div class="calculator-title">
-            <h3>Calculate how much you’ll pay</h3>
-        </div>
-        <div class="calculator">
-            <div class="left-side-calculator">
+                    <input type="number" class="product-quantity" placeholder="Product quantity"/>
+                    <input type="number" class="orders" placeholder="Estimated orders in month" />
 
-                <input type="number" class="product-quantity" placeholder="Product quantity"/>
-                <input type="number" class="orders" placeholder="Estimated orders in month" />
+                    <button class="package-choosing package-arrow-down package-arrow-up">Choose package</button>
+                    <div class="dropdown-visible dropdown-hidden">
+                        <div class="option basic">Basic</div>
+                        <div class="option professional">Professional</div>
+                        <div class="option premium">Premium</div>
+                    </div>
 
-                <button class="package-choosing package-arrow-down package-arrow-up">Choose package</button>
-                <div class="dropdown-visible dropdown-hidden">
-                    <div class="option basic">Basic</div>
-                    <div class="option professional">Professional</div>
-                    <div class="option premium">Premium</div>
+                    <div class="accounting-checkbox">
+                        <input type="checkbox" class="accounting"/>
+                        <span class="accounting-text-span">Accounting</span>
+                    </div>
+                    <div class="rental-checkbox">
+                        <input type="checkbox" class="rental"/>
+                        <span class="rental-text-span">Rental of a payment terminal</span>
+                    </div>
+
                 </div>
 
-                <div class="accounting-checkbox">
-                    <input type="checkbox" class="accounting"/>
-                    <span class="accounting-text-span">Accounting</span>
-                </div>
-                <div class="rental-checkbox">
-                    <input type="checkbox" class="rental"/>
-                    <span class="rental-text-span">Rental of a payment terminal</span>
+                <div class="right-side-calculator">
+
+                    <div class="calculator-work product-bar">
+                        <p class="product-text">Products</p>
+                        <p class="product-values"></p>
+                        <p class="product-total"></p>
+                    </div>
+                    <div class="calculator-work orders-bar">
+                        <p class="orders-text">Orders</p>
+                        <p class="orders-values"></p>
+                        <p class="orders-total"></p>
+                    </div>
+                    <div class="calculator-work package-bar">
+                        <p class="package-text">Package</p>
+                        <p class="package-values"></p>
+                        <p class="package-total"></p>
+                    </div>
+                    <div class="calculator-work accounting-bar">
+                        <p class="accounting-text">Accounting</p>
+                        <p class="accounting-total"></p>
+                    </div>
+                    <div class="calculator-work terminal-bar">
+                        <p class="terminal-text">Terminal</p>
+                        <p class="terminal-total"></p>
+                    </div>
+                    <div class="calculator-total">
+                        <p class="result-text" >Total</p>
+                        <p class="result-total"></p>
+                    </div>
+
                 </div>
 
             </div>
-
-            <div class="right-side-calculator">
-
-                <div class="calculator-work product-bar">
-                    <p class="product-text">Products</p>
-                    <p class="product-values"></p>
-                    <p class="product-total"></p>
-                </div>
-                <div class="calculator-work orders-bar">
-                    <p class="orders-text">Orders</p>
-                    <p class="orders-values"></p>
-                    <p class="orders-total"></p>
-                </div>
-                <div class="calculator-work package-bar">
-                    <p class="package-text">Package</p>
-                    <p class="package-values"></p>
-                    <p class="package-total"></p>
-                </div>
-                <div class="calculator-work accounting-bar">
-                    <p class="accounting-text">Accounting</p>
-                    <p class="accounting-total"></p>
-                </div>
-                <div class="calculator-work terminal-bar">
-                    <p class="terminal-text">Terminal</p>
-                    <p class="terminal-total"></p>
-                </div>
-                <div class="calculator-total">
-                    <p class="result-text" >Total</p>
-                    <p class="result-total"></p>
-                </div>
-
-            </div>
-
-        </div>
+        </section>
     </section>
 
 </body>

@@ -23,14 +23,7 @@
 
 .calculator-box {
   background: #F7F7F7;
-
-    @media (min-width: 1353px) {
-      width: 100vw;
-      height: 100vh;
-    }
-}
-
-.calculator-container {
+  padding: 0;
   width: 100vw;
   height: 100vh;
 }
@@ -152,7 +145,7 @@
     z-index: 1;
     background: #FFF;
     border: 1px solid #EB476E;
-    top: 25.3125rem;
+    top: 32.5rem;
   }
 
   .dropdown-hidden {
