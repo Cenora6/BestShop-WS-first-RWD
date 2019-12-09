@@ -4,28 +4,28 @@ var sourcemaps = require("gulp-sourcemaps");
 var browserSync = require("browser-sync").create();
 
 gulp.task("watch", function(cb) {
-  gulp.watch("development/scss/**/*.scss", gulp.series("sass"));
+  gulp.watch("scss/**/*.scss", gulp.series("sass"));
   cb();
 });
 
 gulp.task("serve", function(cb) {
   browserSync.init({
-    server: "./development"
+    server: "./"
   });
-  gulp.watch("development/scss/**/*.scss", gulp.series("sass")).on("change", browserSync.reload);
-  gulp.watch("development/*.html").on("change", browserSync.reload);
-  gulp.watch("development/js/*.js").on("change", browserSync.reload);
+  gulp.watch("scss/**/*.scss", gulp.series("sass")).on("change", browserSync.reload);
+  gulp.watch("*.html").on("change", browserSync.reload);
+  gulp.watch("js/*.js").on("change", browserSync.reload);
   cb();
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task("sass", function() {
   return gulp
-      .src("development/scss/**/*.scss")
+      .src("scss/**/*.scss")
       .pipe(sass().on("error", sass.logError))
       .pipe(sourcemaps.init())
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest("development/css"))
+      .pipe(gulp.dest("css"))
       .pipe(browserSync.stream());
 });
 

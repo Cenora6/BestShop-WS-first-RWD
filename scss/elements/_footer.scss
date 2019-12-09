@@ -1,0 +1,41 @@
+footer {
+  height: 5.563rem;
+  background-color: #F7F7F7;
+  box-shadow: 0 5px 40px #00000029;
+  padding: 0.625rem 0;
+
+  .footer-box {
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .left-box {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 0.625rem;
+
+    h2 {
+      font-family: $secondary-font;
+      font-size: 1.625rem;
+      font-weight: 300;
+      letter-spacing: 0;
+      color: #08A6E4;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-family: $main-font;
+      font-weight: 400;
+      color: #A5A5A5;
+      font-size: 0.6875rem;
+    }
+  }
+
+  .right-box {
+    img {
+      align-items: center;
+      margin: 0 1.25rem 1.25rem 0;
+    }
+  }
+}

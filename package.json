@@ -1,7 +1,7 @@
 {
-  "name": "fer_scrum_lab",
+  "name": "bestshop",
   "version": "1.0.0",
-  "description": "Front-End ScrumLab",
+  "description": "BestShop Workshop",
   "main": "index.js",
   "scripts": {
     "start": "gulp sass & gulp serve"
@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodersLab-core/FER_SCRUM_LAB.git"
+    "url": "https://github.com/Cenora6/BestShop_WS_first_RWD"
   },
-  "author": "Michał T",
+  "author": "Aleksandra G.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodersLab-core/FER_SCRUM_LAB/issues"
+    "url": "https://github.com/Cenora6/BestShop_WS_first_RWD/issues"
   },
-  "homepage": "https://github.com/CodersLab-core/FER_SCRUM_LAB#readme",
+  "homepage": "https://github.com/Cenora6/BestShop_WS_first_RWD#readme",
   "devDependencies": {
     "browser-sync": "^2.26.0",
     "gulp": "^4.0.0",

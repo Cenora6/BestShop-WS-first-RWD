@@ -3,14 +3,11 @@
   margin-bottom: 2rem;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
-
+  align-items: center;
 
   @media (min-width: 1353px) {
     flex-direction: row;
     margin-top: 7rem;
-
-    align-items: center;
   }
 }
 
@@ -74,9 +71,8 @@
 }
 
 .right {
-  width: 40%;
-
   @media (min-width: 1353px) {
+    width: 40%;
     padding-left: 4.375rem;
   }
 
@@ -98,6 +94,8 @@
     }
 
     input {
+
+      width: 10rem;
       height: 3.125rem;
       padding: 0 10rem;
       margin-top: 0.5rem;
@@ -105,6 +103,7 @@
       opacity: 0.5;
 
       @media (min-width: 1353px) {
+        width: 100%;
         padding: 0 1rem;
       }
     }
