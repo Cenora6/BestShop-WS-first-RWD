@@ -8,4 +8,5 @@ BestShop website template (RWD)
 - JavaScript
 
 ## Preview:
-Check the preview of the game here: *https://cenora6.github.io/BestShop_WS_first_RWD/*
+Check the preview of the website here: *https://cenora6.github.io/BestShop_WS_first_RWD/*
+
