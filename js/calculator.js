@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
             accountingTotal.innerText = '$' + 35;
             sum4 = 35;
         } else {
-            accountingBar.style.visibility = "visible";
+            accountingBar.style.visibility = "hidden";
             accountingTotal.innerText = '$' + 0;
             sum4 = 0;
         }
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
             terminalTotal.innerText = '$' + 5;
             sum5 = 5;
         } else {
-            terminalBar.style.visibility = "visible";
+            terminalBar.style.visibility = "hidden";
             terminalTotal.innerText = '$' + 0;
             sum5 = 0;
         }
